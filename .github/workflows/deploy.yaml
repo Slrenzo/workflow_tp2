@@ -2,10 +2,8 @@ name : Déploiement application
 on:
   workflow_dispatch:
     inputs:
-      server:
+      serveur:
         description: Environnement de déploiement
-      envdep:
-        description: 'Environnement de déploiement'
         required: true
         default: 'dev'
 jobs:
