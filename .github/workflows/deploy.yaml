@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Démarage Workflow
-        run: echo "Démarage du Workflow"
+        run: echo "Démarage du Workflow sur ${{ github.ref }}"
