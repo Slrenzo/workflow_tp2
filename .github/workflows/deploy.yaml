@@ -12,3 +12,6 @@ jobs:
     steps:
       - name: Démarage Workflow
         run: echo "Démarage du Workflow sur ${{ github.ref }}"
+      - name: Récupération code
+        run: echo "Récupération du code"
+        if: ${{ github.ref == "refs/heads/main" }}
