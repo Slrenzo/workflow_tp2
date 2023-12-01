@@ -18,3 +18,9 @@ jobs:
       - name: Déploiement Production
         if: github.event.inputs.serveur == 'prod'
         run: echo "Déploiement en production"
+      - name: Déploiement Qualification
+        if: github.event.inputs.serveur == 'quad'
+        run: echo "Déploiement en qualification"
+      - name: Déploiement Développement
+        if: github.event.inputs.serveur == 'dev'
+        run: echo "Déploiement en développement"
