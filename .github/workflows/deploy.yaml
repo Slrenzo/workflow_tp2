@@ -27,4 +27,5 @@ jobs:
         if: github.event.inputs.serveur == 'dev'
         run: echo "Déploiement en développement"
       - name: Fin Workflow
+        if: always()
         run: echo "Fin du Workflow"
