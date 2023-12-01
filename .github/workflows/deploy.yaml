@@ -14,4 +14,4 @@ jobs:
         run: echo "Démarage du Workflow sur ${{ github.ref }}"
       - name: Récupération code
         run: echo "Récupération du code"
-        if: ${{ github.ref == "refs/heads/main" }}
+        if: ${{ github.ref }} == "refs/heads/main" 
