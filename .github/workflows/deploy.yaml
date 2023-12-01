@@ -1,0 +1,16 @@
+name : Déploiement application
+on:
+  workflow_dispatch:
+    inputs:
+      server:
+        description: Environnement de déploiement
+      envdep:
+        description: 'Environnement de déploiement'
+        required: true
+        default: 'dev'
+jobs:
+  deploy-env:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Démarage Workflow
+      - run: echo "Démarage du Workflow"
